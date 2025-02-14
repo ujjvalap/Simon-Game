@@ -1,25 +1,36 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simon Say Game</title>
+    <title>Simon Says Game</title>
     <link rel="stylesheet" href="simon.css">
- </head>
- <body>
+</head>
+<body>
+    <div class="overlay hidden">
+        <div class="modal">
+            <h2>Welcome to Simon Says!</h2>
+            <p>Follow the pattern and repeat the sequence to advance. The game gets harder as you progress!</p>
+            <button id="startGame">Start Game</button>
+        </div>
+    </div>
+
     <h2>Simon Game</h2>
     <h3 class="score">Press any key to start</h3>
-    <div class="mainbox">
-        <div class="1"><div class=" btn red" id="red"></div>
-        <div class=" btn green" id="green"></div>
-    </div>
-    <div class="2">
-
     
-    <div class=" btn orange" id="orange"></div>
+    <div class="mainbox">
+        <div class="row">
+            <div class="btn red" id="red"></div>
+            <div class="btn green" id="green"></div>
+        </div>
+        <div class="row">
+            <div class="btn orange" id="orange"></div>
+            <div class="btn blue" id="blue"></div>
+        </div>
+    </div>
 
-        <div class=" btn blue" id="blue"></div>
-    </div></div>
+    <h3 class="high-score">High Score: 0</h3>
+
     <script src="simon.js"></script>
- </body>
- </html>
+</body>
+</html>

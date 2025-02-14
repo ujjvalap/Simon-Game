@@ -1,34 +1,109 @@
-body{
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
     text-align: center;
 }
-.btn{
-    height: 200px;
-    width: 200px;
-    border: 2px solid black;
-    
-    margin: 2rem;
 
-}
-.mainbox{
+body {
+    background: linear-gradient(135deg, #1e1e2f, #33334d);
+    color: white;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-  
-}
-.red{
-    background-color: rgb(235, 99, 115);
-}
- .green{
-    background-color: rgb(104, 192, 151);
-}
-.blue{
-    background-color: rgb(134, 165, 202);
-}
-.orange{
-    background-color: rgb(244, 153, 88);
+    height: 100vh;
 }
 
-.flash{
- background-color: aliceblue;
-   
+h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.mainbox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s, opacity 0.2s;
+    cursor: pointer;
+}
+
+.red { background-color: #ff4c4c; }
+.green { background-color: #4cff87; }
+.orange { background-color: #ffb74c; }
+.blue { background-color: #4c9bff; }
+
+.btn:active {
+    transform: scale(0.9);
+}
+
+.flash {
+    opacity: 0.5;
+}
+
+.game-over {
+    background-color: red;
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20%, 80% { transform: translateX(-10px); }
+    40%, 60% { transform: translateX(10px); }
+}
+
+/* MODAL STYLE */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal {
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none;
 }

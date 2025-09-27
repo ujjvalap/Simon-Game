@@ -52,7 +52,7 @@ Feel free to fork the project and submit a pull request. Suggestions and improve
 
 
 ---
-🔗 **Live Demo**: [Simon Says Game](https://your-demo-link.com)
+🔗 **Live Demo**: https://simon-game-tau-sooty.vercel.app/
 
 👨‍💻 **Developed by:** Ujjval Pateliya
 
